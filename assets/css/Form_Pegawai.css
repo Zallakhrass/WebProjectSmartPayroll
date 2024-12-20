@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Latar belakang putih */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Tinggi penuh layar */
+  overflow: hidden; /* Nonaktifkan scrolling */
+}
+h4 {
+  margin-left: 15px;
+  margin-top: 10px;
+  height: 15px;
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+.head {
+  width: 100%;
+
+  margin-left: -19px;
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+
+.form-container {
+  margin-top: 20px;
+  width: 100%; /* Memenuhi seluruh lebar layar */
+  max-width: none; /* Hilangkan batas maksimal lebar */
+  height: 100vh; /* Memenuhi tinggi penuh layar */
+  display: flex; /* Untuk membuat form berada di tengah */
+  flex-direction: column; /* Tata letak form */
+  justify-content: center; /* Pusatkan form secara vertikal */
+  padding: 20px;
+  background-color: transparent; /* Hilangkan background putih */
+  box-shadow: none; /* Hilangkan bayangan */
+  border-radius: 0; /* Hilangkan sudut melengkung */
+}
+
+.form-container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Tetap gunakan dua kolom */
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+label {
+  margin-bottom: 3px;
+  font-weight: regular;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+input:hover {
+  background-color: #f4f4f4;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 13px;
+  border: 1px solid #dad9d9;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.34);
+  border-radius: 4px;
+  width: 90%;
+  box-sizing: border-box;
+}
+.aktif {
+  margin-left: 10px;
+}
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #0752a2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: -76px;
+  margin-bottom: 75px;
+  border-radius: 4px;
+  cursor: pointer;
+  grid-column: span 2;
+  width: 21%;
+  position: relative;
+  margin-left: 52%;
+  float: right;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.btn-kembali {
+  background-color: #ff0000;
+  color: white;
+  
+  border: none;
+  height: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 13px;
+  margin-top: -130px;
+  padding-top: -6px;
+  border-radius: 4px;
+  cursor: pointer;
+  grid-column: span 2;
+  width: 18%;
+  font-size: 14px;
+  position: relative;
+  margin-left: 75%;
+  float: right;
+  text-decoration: none;
+}
+
+.btn-kembali:hover {
+  background-color: #d50f0f; /* Warna saat hover */
+}
+
+@media (max-width: 600px) {
+  .form-container form {
+    grid-template-columns: 1fr; /* Satu kolom untuk layar kecil */
+  }
+
+  button {
+    width: 100%;
+    margin-left: 0; /* Center-align untuk mobile */
+    float: none;
+  }
+}
